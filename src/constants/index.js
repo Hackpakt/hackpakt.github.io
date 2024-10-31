@@ -212,16 +212,16 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "KAPT3 App",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A smart crypto wallet enabling secure and seamless crypto transfers, for simple decentralized experience.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "solidity",
         color: "green-text-gradient",
       },
       {
@@ -230,49 +230,49 @@ const projects = [
       },
     ],
     image: carrent,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/Hackpakt/kapt3",
   },
   {
-    name: "Job IT",
+    name: "AI x Next - Career Path",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Private Repo: Aimed at harnessing AI for innovative solutions.",
     tags: [
       {
-        name: "react",
+        name: "gemini",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "mongodb",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "nextjs",
         color: "pink-text-gradient",
       },
     ],
     image: jobit,
-    source_code_link: "https://github.com/",
+    source_code_link: "hhttps://github.com/Hackpakt",
   },
   {
-    name: "Trip Guide",
+    name: "Dynamic Portfolio",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A visually engaging portfolio website built with Three.js, featuring smooth animations to showcase projects, skills, and achievements.",
     tags: [
       {
-        name: "nextjs",
+        name: "threejs",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "reactjs",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "tailwindcss",
         color: "pink-text-gradient",
       },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://hackpakt.github.io/",
   },
 ];
 

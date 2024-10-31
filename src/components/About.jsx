@@ -11,8 +11,7 @@ const ServiceCard = ({ index, developer, title, icon, github, portfolio }) => (
   <Tilt className='xs:w-[250px] w-full'>
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
-    >
+      className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'>
       <div
         options={{
           max: 45,
@@ -38,7 +37,7 @@ const ServiceCard = ({ index, developer, title, icon, github, portfolio }) => (
             href={github}
             target="_blank"
             rel="noopener noreferrer"
-            className='bg-blue-500 text-white py-2 px-4 rounded'
+            className='violet-gradient text-white py-2 px-4 rounded'
           >
             GitHub
           </a>
@@ -46,7 +45,7 @@ const ServiceCard = ({ index, developer, title, icon, github, portfolio }) => (
             href={portfolio}
             target="_blank"
             rel="noopener noreferrer"
-            className='bg-green-500 text-white py-2 px-4 rounded'
+            className='violet-gradient text-white py-2 px-4 rounded'
           >
             Portfolio
           </a>
