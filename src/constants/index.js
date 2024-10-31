@@ -42,30 +42,35 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    developer: "Kartikey Sharma", // Developer's name as the main focus
+    title: "@relaxkartikey", // Title or role of the developer
     icon: web,
-    github: "https://github.com/your-github-link1",
-    portfolio: "https://yourportfolio.com/webdev",
+    github: "https://github.com/relaxkartikey",
+    portfolio: "https://bento.me/relaxkartikey", // Replace with actual portfolio link
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
-    github: "https://github.com/your-github-link2",
-    portfolio: "https://yourportfolio.com/reactnative",
-  },
-  {
-    title: "Backend Developer",
-    icon: backend,
-    github: "https://github.com/your-github-link3",
-    portfolio: "https://yourportfolio.com/backend",
-  },
-  {
-    title: "Content Creator",
+    developer: "Anag Aggarwal", // Developer's name as the main focus
+    title: "@anag0710", // Title or role of the developer
     icon: creator,
-    github: "https://github.com/your-github-link4",
-    portfolio: "https://yourportfolio.com/contentcreator",
+    github: "https://github.com/Anag0710",
+    portfolio: "https://bento.me/anag", // Replace with actual portfolio link
+  },
+  {
+    developer: "Princy Garg", // Developer's name as the main focus
+    title: "@princygarg01", // Title or role of the developer
+    icon: mobile,
+    github: "https://github.com/princygarg01",
+    portfolio: "https://bento.me/princy-garg", // Replace with actual portfolio link
+  },
+  {
+    developer: "Tanishka Jain", // Developer's name as the main focus
+    title: "@tanishka081", // Title or role of the developer
+    icon: backend,
+    github: "https://github.com/tanishkajain081",
+    portfolio: "https://www.linkedin.com/in/tanishkajain081", // Replace with actual portfolio link
   },
 ];
+
 
 
 const technologies = [

@@ -7,7 +7,7 @@ import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
-const ServiceCard = ({ index, title, icon, github, portfolio }) => (
+const ServiceCard = ({ index, developer, title, icon, github, portfolio }) => (
   <Tilt className='xs:w-[250px] w-full'>
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
@@ -23,13 +23,14 @@ const ServiceCard = ({ index, title, icon, github, portfolio }) => (
       >
         <img
           src={icon}
-          alt={title}
+          alt={developer}
           className='w-16 h-16 object-contain'
         />
 
-        <h3 className='text-white text-[20px] font-bold text-center'>
-          {title}
+        <h3 className='text-white text-[20px] font-bold text-center truncate'>
+          {developer}
         </h3>
+        <p className='text-gray-300 text-[14px] text-center'>{title}</p>
 
         {/* Add GitHub and Portfolio buttons */}
         <div className='flex flex-row gap-2 mt-4'>
