@@ -44,20 +44,29 @@ const services = [
   {
     title: "Web Developer",
     icon: web,
+    github: "https://github.com/your-github-link1",
+    portfolio: "https://yourportfolio.com/webdev",
   },
   {
     title: "React Native Developer",
     icon: mobile,
+    github: "https://github.com/your-github-link2",
+    portfolio: "https://yourportfolio.com/reactnative",
   },
   {
     title: "Backend Developer",
     icon: backend,
+    github: "https://github.com/your-github-link3",
+    portfolio: "https://yourportfolio.com/backend",
   },
   {
     title: "Content Creator",
     icon: creator,
+    github: "https://github.com/your-github-link4",
+    portfolio: "https://yourportfolio.com/contentcreator",
   },
 ];
+
 
 const technologies = [
   {
