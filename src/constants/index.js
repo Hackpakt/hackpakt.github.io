@@ -251,7 +251,7 @@ const projects = [
       },
     ],
     image: jobit,
-    source_code_link: "hhttps://github.com/Hackpakt",
+    source_code_link: "https://github.com/Hackpakt",
   },
   {
     name: "Dynamic Portfolio",
