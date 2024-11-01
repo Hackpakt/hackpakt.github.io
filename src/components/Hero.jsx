@@ -1,47 +1,70 @@
 import { motion } from "framer-motion";
-
 import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas";
 
 const Hero = () => {
   return (
-    <section className={`relative w-full h-screen mx-auto`}>
-      <div
-        className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
-      >
-        <div className='flex flex-col justify-center items-center mt-5'>
-          <div className='w-5 h-5 rounded-full bg-[#2e2e2e]' />
-          <div className='w-1 sm:h-80 h-40 bg-[#2e2e2e]' />
-        </div>
+    <section className={`relative w-full h-screen mx-auto px-4 flex items-center justify-center`}>
 
-        <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
-            Welcome to <span className='text-[#0d0d0d] glow'>HackPAKT</span>
-          </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+      <div className={`text-center flex flex-col items-center gap-5`}>
+        <h1 className={`${styles.heroHeadText} text-white`}>
+          Welcome to <span className='text-[#0d0d0d] glow'>HackPAKT</span>
+        </h1>
+        <p className={`${styles.heroSubText} mt-2 text-white-100`}>
           Exploring tech, & solving problems.
-          </p>
-        </div>
-      </div>
+        </p>
 
-      <ComputersCanvas />
-
-      <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
-        <a href='#about'>
-          <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
-            <motion.div
+        {/* Buttons */}
+        <div className='flex justify-center items-center gap-10 mt-10'>
+          <a href='#about'>
+            <motion.button
+              whileHover={{
+                scale: 1.15,
+                boxShadow: "0px 0px 10px 5px rgba(255, 255, 255, 0.6)",
+              }}
+              whileTap={{
+                scale: 0.95,
+                boxShadow: "0px 0px 5px 2px rgba(255, 255, 255, 0.4)",
+              }}
               animate={{
-                y: [0, 24, 0],
+                scale: [1, 1.05, 1],
+                boxShadow: ["0px 0px 8px rgba(255, 255, 255, 0.4)", "0px 0px 12px rgba(255, 255, 255, 0.6)", "0px 0px 8px rgba(255, 255, 255, 0.4)"],
               }}
               transition={{
                 duration: 1.5,
                 repeat: Infinity,
-                repeatType: "loop",
+                repeatType: "reverse",
               }}
-              className='w-3 h-3 rounded-full bg-secondary mb-1'
-            />
-          </div>
-        </a>
+              className='bg-[#0d0d0d] text-white px-10 py-4 text-lg rounded-md shadow-lg border border-white glow-border'
+            >
+              Start
+            </motion.button>
+          </a>
+
+          <a href='https://github.com/hackpakt' target='_blank' rel='noopener noreferrer'>
+            <motion.button
+              whileHover={{
+                scale: 1.15,
+                boxShadow: "0px 0px 10px 5px rgba(255, 255, 255, 0.6)",
+              }}
+              whileTap={{
+                scale: 0.95,
+                boxShadow: "0px 0px 5px 2px rgba(255, 255, 255, 0.4)",
+              }}
+              animate={{
+                scale: [1, 1.05, 1],
+                boxShadow: ["0px 0px 8px rgba(255, 255, 255, 0.4)", "0px 0px 12px rgba(255, 255, 255, 0.6)", "0px 0px 8px rgba(255, 255, 255, 0.4)"],
+              }}
+              transition={{
+                duration: 1.5,
+                repeat: Infinity,
+                repeatType: "reverse",
+              }}
+              className='bg-[#0d0d0d] text-white px-10 py-4 text-lg rounded-md shadow-lg border border-white glow-border'
+            >
+              Github
+            </motion.button>
+          </a>
+        </div>
       </div>
     </section>
   );
